@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="weather-search">
+        <form class="form-inline">
+            <span class="form-group {{hasState}}">
+                <input ng-model="location" type="text" class="form-control" id="location" placeholder="Город">
+            </span>
+            <button ng-click="getForecastByLocation(location)" class="btn">Поиск!</button>
+        </form>
+    </div>
+    <div class="weather-data" ng-show="true"> 
+        <h3>
+            {{forecast.city.name}}, {{forecast.city.country | isoCountry}}
+        </h3>
+        <div weather-panel="forecast" show-entry="forecast.list[0]"></div>
+    </div>
+</div>

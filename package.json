@@ -1,0 +1,10 @@
+{
+  "name": "weather-app",
+  "description": "",
+  "version": "1.0.0",
+  "author": "Rustam Parpiev",
+  "scripts": {
+    "start": "node scripts/web-server.js"
+  },
+  "devDependencies": {}
+}

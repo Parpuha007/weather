@@ -1,0 +1,14 @@
+<div class="panel panel-primary">
+    <div class="panel-body">
+        <div>
+            <p class="lead">
+                <img ng-src="{{getIconImageUrl(useDayForecast.weather[0].icon)}}" />
+                {{useDayForecast.temp.day | number:1}}&#176;C {{useDayForecast.weather[0].main}}
+            </p>
+            <p>
+                Макс: {{useDayForecast.temp.max}}&#176;C ~
+                Мин: {{useDayForecast.temp.min}}&#176;C
+            </p>
+        </div>
+    </div>
+</div>
